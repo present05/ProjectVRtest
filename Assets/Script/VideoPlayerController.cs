@@ -21,4 +21,10 @@ public class VideoPlayerController : MonoBehaviour
     {
         videoPlayer.Pause();
     }
+
+    public void ChangeVideo(VideoClip videoClip)
+    {
+        Stop();
+        videoPlayer.clip = videoClip;
+    }
 }
